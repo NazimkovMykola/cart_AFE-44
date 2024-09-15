@@ -1,0 +1,8 @@
+.cartTotal {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 50px;
+    flex-direction: column;
+    padding-top: 2rem;
+    font-size: 2rem;
+}

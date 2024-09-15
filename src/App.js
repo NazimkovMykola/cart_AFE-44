@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import "./App.css"
+import CartItem from "./components/CartItem/CartItem"
+import CartTotal from "./components/CartTotal/CartTotal"
 
 function App() {
+  //підняття стейту
+  // він робить компонент який був state => stateless
+  const [quantity, setQuantity] = useState(1)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CartItem quantity={quantity} setQuantity={setQuantity} />
+      <CartTotal totalPrice={(7.99 * quantity).toFixed(2)} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,21 @@
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 ;
+    border: 1px solid grey;
+}
+.cartItem__text{
+    display: flex;
+    flex-direction: column;
+}
+.cartItem__quantity{
+padding: 0 1rem;
+}
+.cartItem__quantityButton{
+    padding: 0 1rem;
+    font-size: 24px;
+}
+.cartItem__totalPrice {
+    width: 52px;
+}
